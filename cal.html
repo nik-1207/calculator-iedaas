@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text" id="res" style="padding-left: 5px;" class="input">
+        </div>
+        <div class="keypad">
+            <div class="keyrow" >
+                <div class="num" onclick="dis('7')">7</div>
+                <div class="num" onclick="dis('8')">8</div>
+                <div class="num" onclick="dis('9')">9</div>
+                <div class="num" style="background-color:#524b6e;color:white" onclick="del()">DEL</div>
+            </div>
+            <div class="keyrow" >
+                <div class="num" onclick="dis('4')">4</div>
+                <div class="num" onclick="dis('5')">5</div>
+                <div class="num" onclick="dis('6')">6</div>
+                <div class="num" onclick="dis('+')">+</div>
+            </div>
+            <div class="keyrow">
+                <div class="num" onclick="dis('1')">1</div>
+                <div class="num" onclick="dis('2')">2</div>
+                <div class="num" onclick="dis('3')">3</div>
+                <div class="num" onclick="dis('-')">-</div>
+            </div>
+            <div class="keyrow">
+                <div class="num" onclick="dis('.')">.</div>
+                <div class="num" onclick="dis('0')">0</div>
+                <div class="num" onclick="dis('/')">/</div>
+                <div class="num" onclick="dis('*')">x</div>
+            </div>
+            <div class="keyrow">
+                <div class="rst" style="background-color:#524b6e;color:white" onclick="reset()">RESET</div>
+                <div class="rst" style="background-color:red;color:white;box-shadow: 3px 4px #f174749c;" onclick="solve()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=</div>
+            </div>
+        </div>
+    </div>
+       
+</body>
+</html>
